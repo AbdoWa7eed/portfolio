@@ -124,6 +124,8 @@ a:hover {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
     transition: all 0.3s ease;
+    padding-top: env(safe-area-inset-top);
+    /* Account for safe area on devices with notches */
 }
 
 .navbar.scrolled {
@@ -222,6 +224,10 @@ a:hover {
     position: relative;
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     overflow: hidden;
+    padding-top: 80px;
+    /* Account for fixed navbar */
+    padding-top: calc(80px + env(safe-area-inset-top));
+    /* Account for safe area on devices with notches */
 }
 
 .hero-background {
@@ -1314,6 +1320,13 @@ section {
         --section-padding: 3rem 0;
     }
 
+    .hero {
+        padding-top: calc(90px + env(safe-area-inset-top));
+        /* Account for mobile navbar height and safe area */
+        min-height: calc(100vh - 90px - env(safe-area-inset-top));
+        /* Adjust viewport height for navbar and safe area */
+    }
+
     .nav-menu {
         position: fixed;
         top: 100%;
@@ -1406,7 +1419,8 @@ section {
     }
 
     .hero {
-        padding-top: 2rem;
+        padding-top: calc(100px + env(safe-area-inset-top));
+        /* Increased padding for mobile to account for navbar and safe area */
     }
 
     .name {
