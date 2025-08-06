@@ -150,4 +150,26 @@ document.addEventListener('DOMContentLoaded', () => {
         floatingWidget.style.opacity = '1';
         floatingWidget.style.transform = 'translateY(0) scale(1)';
     }
-}); 
+});
+
+// Additional fallback for floating widget visibility
+window.addEventListener('load', () => {
+    const floatingWidget = document.getElementById('floatingWidget');
+    if (floatingWidget) {
+        floatingWidget.style.opacity = '1';
+        floatingWidget.style.transform = 'translateY(0) scale(1)';
+        floatingWidget.style.display = 'block';
+        floatingWidget.style.visibility = 'visible';
+    }
+});
+
+// Final fallback - ensure floating widget is visible after everything loads
+setTimeout(() => {
+    const floatingWidget = document.getElementById('floatingWidget');
+    if (floatingWidget) {
+        floatingWidget.style.opacity = '1';
+        floatingWidget.style.transform = 'translateY(0) scale(1)';
+        floatingWidget.style.display = 'block';
+        floatingWidget.style.visibility = 'visible';
+    }
+}, 2000); 
