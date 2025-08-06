@@ -187,46 +187,7 @@ a {
     transform: translateY(0) scale(1);
 }
 
-/* Enhanced stagger delays for more professional feel */
-.stagger-item:nth-child(1) {
-    transition-delay: 0.1s;
-}
 
-.stagger-item:nth-child(2) {
-    transition-delay: 0.2s;
-}
-
-.stagger-item:nth-child(3) {
-    transition-delay: 0.3s;
-}
-
-.stagger-item:nth-child(4) {
-    transition-delay: 0.4s;
-}
-
-.stagger-item:nth-child(5) {
-    transition-delay: 0.5s;
-}
-
-.stagger-item:nth-child(6) {
-    transition-delay: 0.6s;
-}
-
-.stagger-item:nth-child(7) {
-    transition-delay: 0.7s;
-}
-
-.stagger-item:nth-child(8) {
-    transition-delay: 0.8s;
-}
-
-.stagger-item:nth-child(9) {
-    transition-delay: 0.9s;
-}
-
-.stagger-item:nth-child(10) {
-    transition-delay: 1s;
-}
 
 text-decoration: none;
 transition: all 0.3s ease;
@@ -1060,6 +1021,15 @@ section {
     text-align: center;
 }
 
+/* Original brand colors for Dart and Flutter */
+.skill-item .devicon-dart-plain {
+    color: #0175C2 !important;
+}
+
+.skill-item .devicon-flutter-plain {
+    color: #02569B !important;
+}
+
 .skill-item span {
     font-weight: 500;
     color: var(--text-primary);
@@ -1156,6 +1126,7 @@ section {
     justify-content: center;
     color: white;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .project-link:hover {
