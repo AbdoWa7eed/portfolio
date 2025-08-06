@@ -143,4 +143,11 @@ function initScrollAnimations() {
 // Initialize scroll animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
+
+    // Ensure floating widget is visible immediately
+    const floatingWidget = document.getElementById('floatingWidget');
+    if (floatingWidget) {
+        floatingWidget.style.opacity = '1';
+        floatingWidget.style.transform = 'translateY(0) scale(1)';
+    }
 }); 
