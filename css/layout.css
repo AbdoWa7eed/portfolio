@@ -6,6 +6,14 @@
     padding: 0 var(--container-padding);
 }
 
+/* Prevent horizontal overflow on small devices */
+section,
+.container,
+.experience-grid,
+.experience-card {
+    max-width: 100%;
+}
+
 section {
     padding: var(--section-padding);
 }
