@@ -22,7 +22,7 @@ A modern, animated single‑page portfolio built with semantic HTML, modular CSS
 │  ├─ about.html
 │  ├─ experience.html
 │  ├─ skills.html
-│  ├─ projects.html           # Optional: full projects markup (currently inlined in index.html)
+│  ├─ projects.html           
 │  ├─ contact.html
 │  └─ footer.html
 ├─ css/
